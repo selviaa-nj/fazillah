@@ -22,10 +22,21 @@
         .lead {
             font-weight: bold;
         }
-        .img-fluid {
-            max-width: 60%;
-            height: auto;
+        .media-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .media-section img {
+            width: 300px;
             border: 5px solid #4B5320; /* Matching border */
+        }
+        .media-section iframe {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            border: 5px solid #4B5320;
         }
     </style>
 </head>
@@ -48,11 +59,9 @@
                 <p class="text-white">Semoga hidup Abang dipenuhi dengan cinta, tawa, dan petualangan. Semoga impian dan cita-cita Abang menjadi kenyataan, dan semoga Abang selalu menemukan kegembiraan dan kepuasan dalam segala hal yang Abang lakukan.</p>
             </div>
         </div>
-        <div class="text-center">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="Fazillah.mp4" frameborder="0" allowfullscreen></iframe> <!-- ganti dengan link video yang ingin ditampilkan -->
-            </div>
-            <img src="Fazillah.jpg" alt="Foto Fazillah" class="img-fluid mt-3"> <!-- ganti dengan link foto Fazillah -->
+        <div class="media-section">
+            <img src="Fazillah.jpg" alt="Foto Fazillah" class="img-fluid"> <!-- ganti dengan link foto Fazillah -->
+            <iframe src="Fazillah.mp4" frameborder="0" allowfullscreen></iframe> <!-- ganti dengan link video yang ingin ditampilkan -->
         </div>
         <div class="text-center mt-5">
             <h2 class="text-white">SELAMAT ULANG TAHUN SAYANGKU CINTAKU!</h2>
