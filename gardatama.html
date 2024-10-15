@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Fazillah!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <style>
@@ -10,33 +10,44 @@
             background-color: #2E2E2E; /* Dark background */
             color: #D4D4AA; /* Military beige */
             font-family: 'Arial', sans-serif;
-            background-image: url('https://www.transparenttextures.com/patterns/camo.png'); /* Camouflage background */
+            background-image: url('https://www.transparenttextures.com/patterns/camo.png'); /* Camouflage pattern */
+            background-size: cover;
+            background-attachment: fixed;
         }
         .jumbotron {
             background-color: #4B5320; /* Military green */
-            border-radius: 15px;
+            border-radius: 10px;
+            padding: 20px;
         }
         h3, h2, p {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle text shadow */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle text shadow */
         }
         .lead {
             font-weight: bold;
         }
-        .media-section {
+        .media-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 30px;
+            margin: 20px 0;
         }
-        .media-section img {
-            width: 300px;
-            border: 5px solid #4B5320; /* Matching border */
+        .media-content img, .media-content iframe {
+            max-width: 45%; /* Set image and video side by side */
+            border: 3px solid #4B5320;
+            border-radius: 10px;
         }
-        .media-section iframe {
+        .img-fluid {
+            height: auto;
             width: 100%;
-            max-width: 500px;
-            height: 300px;
-            border: 5px solid #4B5320;
+        }
+        @media screen and (max-width: 720px) {
+            .media-content {
+                flex-direction: column;
+            }
+            .media-content img, .media-content iframe {
+                max-width: 100%;
+                margin-bottom: 15px;
+            }
         }
     </style>
 </head>
@@ -49,21 +60,20 @@
             <p>22 tahun telah berlalu sejak Abang pertama kali membawa kegembiraan dan cahaya ke dunia ini, dan sungguh merupakan perjalanan yang luar biasa!</p>
             <p class="lead">Abang adalah sinar matahari yang mencerahkan hariku</p>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <h2 class="text-white">Kekuatan dan Ketahanan</h2>
-                <p class="text-white">Saat kita merayakan ulang tahun pencapaian ini, saya ingin mengingatkan Abang akan kekuatan dan ketahanan Abang, Abang telah tumbuh menjadi dewasa muda yang luar biasa, dan saya sangat bangga dengan Abang yang sekarang</p>
-            </div>
-            <div class="col-md-6">
-                <h2 class="text-white">Cinta, Tawa, dan Kebahagiaan</h2>
-                <p class="text-white">Semoga hidup Abang dipenuhi dengan cinta, tawa, dan petualangan. Semoga impian dan cita-cita Abang menjadi kenyataan, dan semoga Abang selalu menemukan kegembiraan dan kepuasan dalam segala hal yang Abang lakukan.</p>
-            </div>
-        </div>
-        <div class="media-section">
+        
+        <div class="media-content">
             <img src="Fazillah.jpg" alt="Foto Fazillah" class="img-fluid"> <!-- ganti dengan link foto Fazillah -->
-            <iframe src="Fazillah.mp4" frameborder="0" allowfullscreen></iframe> <!-- ganti dengan link video yang ingin ditampilkan -->
+            <iframe src="Fazillah.mp4" frameborder="0" allowfullscreen></iframe> <!-- ganti dengan link video -->
         </div>
-        <div class="text-center mt-5">
+        
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-white text-center">Kekuatan dan Ketahanan</h2>
+                <p class="text-white text-center">Saat kita merayakan ulang tahun pencapaian ini, saya ingin mengingatkan Abang akan kekuatan dan ketahanan Abang. Abang telah tumbuh menjadi dewasa muda yang luar biasa, dan saya sangat bangga dengan Abang yang sekarang.</p>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
             <h2 class="text-white">SELAMAT ULANG TAHUN SAYANGKU CINTAKU!</h2>
             <p class="text-white">KUAT SELALU, SEHAT SEHAT YA SAYANG</p><br>
             <h3 class="text-white">Dari SELVIA ANJARWATI</h3>
