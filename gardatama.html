@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #2E2E2E; /* Warna latar belakang gelap */
+            background-color: #2E2E2E; /* Latar belakang gelap */
             color: #D4D4AA; /* Warna beige militer */
             font-family: 'Arial', sans-serif;
-            background-image: url('https://www.transparenttextures.com/patterns/camo.png'); /* Pola kamuflase */
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/camo.png'); /* Background camo */
             background-size: cover;
             background-attachment: fixed;
         }
@@ -21,33 +23,28 @@
             text-align: center;
         }
         h3, h2, p {
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Bayangan teks halus */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Bayangan teks */
         }
         .lead {
             font-weight: bold;
         }
-        .media-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 20px 0;
-        }
         .media-content img, .media-content iframe {
-            max-width: 45%; /* Menampilkan gambar dan video berdampingan */
-            border: 3px solid #4B5320;
-            border-radius: 10px;
-        }
-        .img-fluid {
-            height: auto;
             width: 100%;
+            height: 100vh; /* Fullscreen potrait untuk foto dan video */
+            object-fit: cover;
+            border: 3px solid #4B5320; /* Border hijau militer */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        iframe {
+            display: block;
+        }
+        .text-center {
+            margin-top: 30px;
         }
         @media screen and (max-width: 720px) {
-            .media-content {
-                flex-direction: column;
-            }
             .media-content img, .media-content iframe {
-                max-width: 100%;
-                margin-bottom: 15px;
+                height: auto; /* Sesuaikan untuk tampilan portrait */
             }
         }
     </style>
@@ -55,26 +52,24 @@
 <body>
     <div class="container">
         <div class="jumbotron text-white">
-            <h3 class="display-4">Selamat 22 tahun, Fazillah!</h3>
+            <h3 class="display-4">Selamat 22 Tahun, Fazillah!</h3>
             <p class="lead">22 Oktober 2002 - 22 Oktober 2024</p>
             <hr class="my-4">
-            <p>22 tahun telah berlalu sejak Abang pertama kali membawa kegembiraan dan cahaya ke dunia ini, dan sungguh merupakan perjalanan yang luar biasa!</p>
+            <p>22 tahun telah berlalu sejak Abang membawa kegembiraan ke dunia ini, dan sungguh perjalanan luar biasa!</p>
             <p class="lead">Abang adalah sinar matahari yang mencerahkan hariku</p>
         </div>
-        
+
         <div class="media-content">
-            <img src="Fazillah.jpg" alt="Foto Fazillah" class="img-fluid"> <!-- Ganti dengan link foto Fazillah -->
-            <iframe src="Fazillah.mp4" frameborder="0" allowfullscreen></iframe> <!-- Ganti dengan link video -->
-        </div>
-        
-        <div class="row">
-            <div class="col-12">
-                <h2 class="text-white text-center">Kekuatan dan Ketahanan</h2>
-                <p class="text-white text-center">Saat kita merayakan ulang tahun pencapaian ini, Aku ingin mengingatkan Abang akan kekuatan dan ketahanan Abang. Abang telah tumbuh menjadi dewasa muda yang luar biasa.</p>
-            </div>
+            <img src="Fazillah.jpg" alt="Foto Fazillah"> <!-- Ganti dengan link foto Fazillah -->
+            <iframe src="Fazillah.mp4" frameborder="0" allowfullscreen></iframe> <!-- Ganti dengan link video Fazillah -->
         </div>
 
-        <div class="text-center mt-4">
+        <div class="text-center">
+            <h2 class="text-white">Kekuatan dan Ketahanan</h2>
+            <p class="text-white">Saat kita merayakan ulang tahun ini, Aku ingin mengingatkan Abang akan kekuatan dan ketahanan Abang yang luar biasa.</p>
+        </div>
+
+        <div class="text-center">
             <h2 class="text-white">SELAMAT ULANG TAHUN SAYANGKU CINTAKU!</h2>
             <p class="text-white">KUAT SELALU, SEHAT-SEHAT YA SAYANG</p><br>
             <h3 class="text-white">Dari SELVIA ANJARWATI</h3>
